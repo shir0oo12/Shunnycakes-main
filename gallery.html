@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery</title>
+  <link rel="icon" type="x-icon" href="wizard.jpg">
+  <link rel="stylesheet" href="gallery.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<button class="back-btn" onclick="window.location.href='index.html'">⬅</button>
+  <div class="gallery-grid">
+    <!-- Each card: put your caption inside .caption (editable) -->
+    <div class="gallery-card" data-full="blue.png" data-caption="Blue OC">
+      <img class="polaroid-photo" src="blue.png" alt="Blue artwork">
+      <div class="caption">Blue OC</div>
+    </div>
+
+    <div class="gallery-card" data-full="debut.png" data-caption="portrait">
+      <img class="polaroid-photo" src="debut.png" alt="Debut portrait">
+      <div class="caption">My self-portrait with korby</div>
+    </div>
+
+    <div class="gallery-card" data-full="kobeniii.png" data-caption="Kobeni">
+      <img class="polaroid-photo" src="kobeniii.png" alt="Kobeni panic">
+      <div class="caption">Kobeni (Fav gurl)</div>
+    </div>
+
+    <div class="gallery-card" data-full="MIIIKUUUUUUUU DAYOOOO.png" data-caption="Miku">
+      <img class="polaroid-photo" src="MIIIKUUUUUUUU DAYOOOO.png" alt="Miku dayooo">
+      <div class="caption">MIIIKUUUUUUUU</div>
+    </div>
+
+    <div class="gallery-card" data-full="mommy kooo.png" data-caption="portrait of my mom">
+      <img class="polaroid-photo" src="mommy kooo.png" alt="Mommy">
+      <div class="caption">I drew my mom last year!</div>
+    </div>
+
+    <div class="gallery-card" data-full="tomieee.jpg" data-caption="Tomie (first draw of her)">
+      <img class="polaroid-photo" src="tomieee.jpg" alt="Creepy Tomie">
+      <div class="caption">Tomieee</div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <div class="close-btn" id="closeBtn">&times;</div>
+    <div class="arrow left" id="prev">&#10094;</div>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    <div class="arrow right" id="next">&#10095;</div>
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+  
+  <script src="gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send Me a Message</title>
+  <link rel="stylesheet" href="message.css">
+</head>
+<body>
+<button class="back-btn" onclick="window.location.href='index.html'">⬅</button>
+  <div class="contact-box">
+    <h2>Send Me a Message💜💙</h2>
+    <form id="contactForm" method="POST" action="https://script.google.com/macros/s/AKfycbxXuZ3E0Ddxw3ZNOSlvehQ1IALuNawXhlDM-323GGvPPWZ-iRrymB4qGCYXu29uo_m3/exec">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <h3>Success!</h3>
+  </div>
+
+  <script src="message.js"></script>
+</body>
+</html>

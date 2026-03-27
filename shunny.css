@@ -1,0 +1,119 @@
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image:url("hm.gif");
+    background-size:cover; background-position:center; background-attachment:fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  /* Container for video + content */
+  .container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    padding: 20px;
+    max-width: 1000px;
+    width: 90%;
+    backdrop-filter: blur(8px);
+  }
+
+  /* Video box */
+  .video-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #myVideo {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  }
+
+  /* Content */
+  .content {
+    flex: 1;
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  /* Play/Pause button */
+  #myBtn {
+    align-self: flex-start;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #c084fc, #a855f7);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+
+  #myBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  }
+
+  /* Back button */
+  .back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(135deg, #8e44ad, #9b59b6);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.2s, background 0.3s;
+    z-index: 1000;
+  }
+
+  .back-btn:hover {
+    background: linear-gradient(135deg, #732d91, #8e44ad);
+    transform: scale(1.1);
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .video-box, .content {
+      width: 100%;
+    }
+  }

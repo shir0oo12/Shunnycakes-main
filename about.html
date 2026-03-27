@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon" type="x-icon" href="wizard.jpg">
+    <title>About Me</title>
+</head>
+<body>
+    <button class="back-btn" onclick="window.location.href='index.html'">⬅</button>
+    <div class="container">
+        <h1> ✮ About Shann (˶˃ ᵕ ˂˶)</h1>
+        <p class="intro">
+            I really enjoy drawing, listening to music, and learning about coding. Whether I’m working on a new drawing or playing my ukulele, I love finding different ways to be creative. 
+            I’m always learning new things (that's why i struggle to pass my work on time LMAO)
+        </p>
+
+        <!-- Toggle buttonz -->
+        <button class="toggle-button" onclick="toggleInterests()">See More of my Interests•ﻌ•</button>
+
+        <!-- Hidden content for more interests -->
+        <div id="more-interests">
+            <p style="text-align: center;">⊹₊⟡⋆I also love to sing, and sometimes take a power nap whenever I get a chance to sleep o_O⊹₊⟡⋆</p>
+            <p style="text-align: center;">⊹₊⟡⋆I love experimenting and exploring things in coding!(mainly jscript)⊹₊⟡⋆</p>
+        </div>
+        <!-- my melody -->
+        <div class="chat-box" id="chat-box">
+            <div class="message left">
+                <img src="yep.jpg" alt="Avatar" class="avatar">
+                <div class="text">
+                    <p>Did you know? Shann loves to draw!</p>
+                    <span class="time">11:00</span>
+                </div>
+            </div>
+            <!-- kuromi -->
+            <div class="message right">
+                <img src="yup.jpg" alt="Avatar" class="avatar">
+                <div class="text">
+                    <p>Hmm, I know that already... anything else?</p>
+                    <span class="time">11:01</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input for user to add messages -->
+        <div class="chat-input">
+            <input type="text" id="userMessage" placeholder="Try typing any text here...˚ʚ♡ɞ˚">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="about.js"></script> 
+</body>
+</html>
